@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fracture – News & Updates</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">
+      <div class="logo-circle">
+        <img src="https://cdn.discordapp.com/icons/1380923372460052482/b289c7ed716ca8c3c19ed77006cda4a0.png" alt="Fracture Logo" />
+      </div>
+      <h1>Fracture</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="battlepass.html">Battle Pass</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="discord.html">Discord</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main News Section -->
+  <main id="news" class="section">
+    <h2>News & Updates</h2>
+
+    <!-- Featured News -->
+    <section class="featured-news">
+      <article>
+        <img src="assets/images/news-featured.jpg" alt="Featured Update" />
+        <h3>Fracture Season 2 Launch</h3>
+        <p>The biggest update yet! New map changes, skins, and a battle pass await you. Dive into the action now!</p>
+        <a href="#">Read more</a>
+      </article>
+    </section>
+
+    <!-- Latest News List -->
+    <section class="news-list">
+      <article>
+        <img src="assets/images/news1.jpg" alt="Patch 1.1 Released" />
+        <h3>Patch 1.1 Released</h3>
+        <p>Bug fixes, performance improvements, and new content have arrived. Update your client to enjoy the latest features.</p>
+        <a href="#">Read more</a>
+      </article>
+      <article>
+        <img src="assets/images/news2.jpg" alt="New Skins Added" />
+        <h3>New Skins Added</h3>
+        <p>Check out the new skins available in the shop this week! Unique designs and limited editions included.</p>
+        <a href="#">Read more</a>
+      </article>
+      <article>
+        <img src="assets/images/news3.jpg" alt="Community Event" />
+        <h3>Community Event Coming Soon</h3>
+        <p>Join the upcoming community event and compete for exclusive rewards. Details will be revealed soon!</p>
+        <a href="#">Read more</a>
+      </article>
+      <article>
+        <img src="assets/images/news4.jpg" alt="Bug Fixes" />
+        <h3>Bug Fixes & Performance</h3>
+        <p>We squashed several bugs and improved game performance to ensure a smoother experience for all players.</p>
+        <a href="#">Read more</a>
+      </article>
+    </section>
+
+    <!-- Categories / Sidebar -->
+    <aside class="news-sidebar">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="#">Updates</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Skins</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+
+      <h3>Popular News</h3>
+      <ul>
+        <li><a href="#">Fracture Season 1 Recap</a></li>
+        <li><a href="#">Top 10 Skins in 2025</a></li>
+        <li><a href="#">Tournament Highlights</a></li>
+      </ul>
+    </aside>
+  </main>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-links">
+    <a href="shop.html">Shop</a> |
+    <a href="battlepass.html">Battle Pass</a> |
+    <a href="news.html">News</a> |
+    <a href="download.html">Download</a> |
+    <a href="community.html">Community</a>
+  </div>
+  <p>&copy; 2025 Fracture. All rights reserved.</p>
+</footer>
+
+<!-- Fade effect JavaScript -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Fade in when page loads
+  document.body.classList.add("loaded");
+
+  // Fade out on internal link clicks
+  document.querySelectorAll("a[href]").forEach(link => {
+    if (!link.href.startsWith(window.location.origin)) return; // Skip external links
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const href = link.href;
+      document.body.classList.remove("loaded"); // Trigger fade-out
+      setTimeout(() => { window.location.href = href; }, 500); // Wait for fade
+    });
+  });
+});
+</script>
+
+</body>
+</html>

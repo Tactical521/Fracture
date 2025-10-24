@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fracture – Old Fortnite Remade</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">
+      <div class="logo-circle">
+        <img src=https://cdn.discordapp.com/icons/1380923372460052482/b289c7ed716ca8c3c19ed77006cda4a0.png? alt="Fracture Logo">
+      </div>
+      <h1>Fracture</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="battlepass.html">Battle Pass</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="discord.html">Discord</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="battlepass" class="section">
+    <h2>Battle Pass</h2>
+    <p>Unlock rewards by leveling through the Battle Pass.</p>
+    <div class="tiers">
+      <!-- Example tier -->
+      <div class="tier">
+        <img src="assets/images/reward1.jpg" alt="Reward 1" />
+        <p>Tier 1: Emote</p>
+      </div>
+      <!-- More tiers -->
+ <div class="tier">
+        <img src="assets/images/reward1.jpg" alt="Reward 2" />
+        <p>Tier 2: Emote</p>
+      </div>
+ <div class="tier">
+        <img src="assets/images/reward1.jpg" alt="Reward 3" />
+        <p>Tier 3: Emote</p>
+      </div>
+    </div>
+    <a href="shop.html" class="btn">Get Battle Pass</a>
+  </section>
+ <!-- Footer -->
+<footer>
+  <div class="footer-links">
+    <a href="shop.html">Shop</a> |
+    <a href="battlepass.html">Battle Pass</a> |
+    <a href="news.html">News</a> |
+    <a href="download.html">Download</a> |
+    <a href="community.html">Community</a>
+  </div>
+  <p>&copy; 2025 Fracture. All rights reserved.</p>
+</footer>
+
+<!-- Fade effect JavaScript -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Fade in when page loads
+  document.body.classList.add("loaded");
+
+  // Fade out on internal link clicks
+  document.querySelectorAll("a[href]").forEach(link => {
+    if (!link.href.startsWith(window.location.origin)) return; // Skip external links
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const href = link.href;
+      document.body.classList.remove("loaded"); // Trigger fade-out
+      setTimeout(() => { window.location.href = href; }, 500); // Wait for fade
+    });
+  });
+});
+</script>
+
+</body>
+</html>
