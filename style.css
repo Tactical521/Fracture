@@ -847,3 +847,10 @@ body.loaded {
   opacity: 1;
 }
 
+background {
+  background: url("https://cdn.discordapp.com/attachments/1410308956340879475/1428078649059446804/IMG_4663.png?ex=690254e2&is=69010362&hm=39427fff40c16687a5de946a9f57aaf4909aeed71cc1ae14114e577c18c7e805") no-repeat center center;
+  background-size: cover;
+  padding: 80px 10%;
+  color: #fff;
+}
+
