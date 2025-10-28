@@ -256,7 +256,7 @@ footer {
   to { opacity: 1; transform: translateY(0); }
 }
 body {
-  background-image: url('https://media.discordapp.net/attachments/1410308956340879475/1428078649059446804/IMG_4663.png?ex=68f282e2&is=68f13162&hm=b4f97330993222631a0fccbf3f8551ad577265d82ab29711872788929e60336c&=&format=webp&quality=lossless&width=1435&height=782'); /* replace with your image path */
+  background-image: url'https://media.discordapp.net/attachments/1410308956340879475/1428078649059446804/IMG_4663.png?ex=68f282e2&is=68f13162&hm=b4f97330993222631a0fccbf3f8551ad577265d82ab29711872788929e60336c&=&format=webp&quality=lossless&width=1435&height=782';
   background-size: cover;      /* makes the image cover the whole page */
   background-position: center; /* centers the image */
   background-repeat: no-repeat;
@@ -846,3 +846,4 @@ body {
 body.loaded {
   opacity: 1;
 }
+
